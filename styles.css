@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#logo {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.aboutus-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+.aboutus-image-container {
+    width: 30%;
+}
+
+.aboutus-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutus-content {
+    width: 60%;
+}
+
+.aboutus-content h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#logo-span {
+    color: rgba(16, 247, 16, 0.911);
+    font-weight: bolder;
+}
+
+.remove-dot {
+    list-style: none;
+}
+
+.remove-dot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remove-dot li a:hover {
+    /* color:green */
+}
+
+nav {
+    background-color: black;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.list-container li:hover {
+    color: green;
+}
+
+.back-drop {
+    background-image: url("./assets/heroimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+
+.back-drop-shed {
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(83, 78, 78, 0.39);
+}
+
+.back-drop-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    letter-spacing: 5px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Akronim', cursive;
+    color: green;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 10px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.advert-banner {
+    background-image: url("./assets/heroimage2.jpg");
+    width: 30%;
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+}
+
+.service-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+
+.advert-container {
+    width: 30%;
+}
+
+.content-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advert-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-card {
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 2px rgb(221, 215, 215);
+    position: relative;
+}
+
+.content-card:hover {
+    border-top: 1px solid green;
+    transition: 0.5s;
+    /* transform: translateY(-10px); */
+}
+
+.contactus-container {
+    width: 100%;
+    background-image: url("./assets/map.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center;
+    margin-top: 5%;
+}
+
+.contactus-shed {
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(117, 107, 107, 0.185);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.contactus-img-container {
+    width: 30%;
+}
+
+.contactus-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.contactus-form-container {
+    width: 60%;
+}
+
+form>input, textarea {
+    outline-color: green;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input,textarea::placeholder{
+    padding: 10px;
+}
+.contact-form button{
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+form h3{
+    text-align: center;
+    color: green;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.sponsors{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(10, 41, 10);
+    color: white;
+}
+.sponsor-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sponsor-header{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sponsor-icons{
+    font-size: 90px;
+}
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.footer h3{
+padding-top: 1%;
+}
+
+@media (max-width:414px) {
+    .service-container{
+        flex-direction: column;
+    }
+    .advert-container {
+        width: 95%;
+        padding: 0px 10px;
+    }
+    .content-container{
+        width: 100%;
+    }
+    .content-card {
+    width: 80%;
+    margin-top: 20px;
+    }
+}

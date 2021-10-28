@@ -1,0 +1,143 @@
+/* ease = starts slow , speeds in middle and slow again in the end.
+ease-in  = slow in the beginning , speeds up  in the end.
+ease-out = speeds in the beginning, slow in the end.
+linear = as the name suggest, i.e. constant speed throughout the animation.
+
+
+ease-in-out = starts slow, fastest in the middle , slow again in the end.
+
+
+
+DIFFERENCE BETWEEN EASE & EASE-IN-OUT :
+
+ease is like ease-in-out , but in ease the starting time of speeding
+is less than the starting time of speeding in ease-in-out.
+That means in ease the animation will start speeding before the animation 
+speeds in ease-in-out. */
+
+
+
+
+
+
+
+/* div{
+    background-color: brown;
+    width: 40%;
+    padding: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    margin-left: -41%;
+    animation-name: alternateflow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+
+} */
+ /* timing-function delay  direction fill-mode; */
+
+/* #one{
+    animation-timing-function: linear
+}
+#two{
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+}
+#three{
+    animation-delay: 0.8s;
+    animation-timing-function:ease-in;
+}
+#four{
+    animation-delay: 1.0s;
+    animation-timing-function: ease
+
+}
+#five{
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out
+}
+
+
+@keyframes alternateflow {
+ 0%{
+    margin-left: 60%;
+ }
+
+}
+ */
+
+ .ball-container{
+     width: 100%;
+     height: 100vh;
+ }
+
+
+.ball-wrapper{
+    width: 200px;
+    height: 200px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    margin-top: 15%;
+    /* margin-left: 45%; */
+
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    /* animation-fill-mode: forwards; */
+}
+.ball-wrapper img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes bounce {
+    0%{
+        margin-top:-27%;;
+    }
+    25%{
+        margin-top: 15%;
+    }
+
+    35%{
+        margin-top: 0%;
+        margin-left:25%
+    }
+    45%{
+        margin-top: 15%;
+        margin-left:28%;
+        
+    }
+    55%{
+        margin-top: 10%;
+        margin-left: 38%;
+    }
+    65%{
+        margin-top: 15%;
+        margin-left: 40%;
+    }
+    75%{
+        margin-top:0%;
+    }
+    85%{
+        margin-top: 15%;
+    }
+    95%{
+        margin-top: 10%;
+    }
+    100%{
+        margin-top: 15%;
+        margin-left: 45%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
